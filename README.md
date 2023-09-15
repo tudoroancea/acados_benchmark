@@ -8,11 +8,12 @@ OCP formulation.
 
 ## workspace setup
 Before running the benchmark make sure that you have installed 
-- cmake and python, e.g. in a conda/mamba env using:
+- cmake and python, e.g. in a [conda/mamba](https://github.com/conda-forge/miniforge)
+   env using:
     ```bash 
     mamba create -n acados_benchmark python numpy matplotlib scipy casadi cmake compilers
     ```
-- acados, e.g. using the following commands:
+- [acados](https://github.com/acados/acados), e.g. using the following commands:
     ```bash
     git clone https://github.com/acados/acados --filter=blob:none --recurse-submodules
     cd acados
@@ -25,7 +26,7 @@ Before running the benchmark make sure that you have installed
     export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ACADOS_SOURCE_DIR/lib
     pip3 install -e $ACADOS_SOURCE_DIR/interfaces/acados_template
     ```
-- icecream (a python debugging logger), e.g. using 
+- [icecream](https://github.com/gruns/icecream) (a python debugging logger), e.g. using 
   ```bash
   pip3 install icecream
   ```
